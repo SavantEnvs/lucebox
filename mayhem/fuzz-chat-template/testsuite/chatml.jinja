@@ -1,0 +1,4 @@
+{% for m in messages %}<|im_start|>{{ m.role }}
+{{ m.content }}{% if m.tool_calls %}{% for t in m.tool_calls %}<tool_call>{{ t.function.name }} {{ t.function.arguments | tojson }}</tool_call>{% endfor %}{% endif %}<|im_end|>
+{% endfor %}{% if add_generation_prompt %}<|im_start|>assistant
+{% endif %}

@@ -1,0 +1,11 @@
+project: savantenvs/lucebox
+target: fuzz-sse-emitter
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-sse-emitter/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_sse_emitter
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,11 @@
+project: savantenvs/lucebox
+target: fuzz-tool-parser
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-tool-parser/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_tool_parser
+    libfuzzer: true
+    timeout: 5

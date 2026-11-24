@@ -1,0 +1,11 @@
+project: savantenvs/lucebox
+target: fuzz-model-card
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-model-card/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_model_card
+    libfuzzer: true
+    timeout: 5

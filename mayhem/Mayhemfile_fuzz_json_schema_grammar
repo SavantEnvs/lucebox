@@ -1,0 +1,11 @@
+project: savantenvs/lucebox
+target: fuzz-json-schema-grammar
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-json-schema-grammar/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_json_schema_grammar
+    libfuzzer: true
+    timeout: 5

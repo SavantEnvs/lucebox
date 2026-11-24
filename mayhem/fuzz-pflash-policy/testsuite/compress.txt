@@ -1,0 +1,1 @@
+compress 137 119900 128 /tmp/pflash_ids.bin

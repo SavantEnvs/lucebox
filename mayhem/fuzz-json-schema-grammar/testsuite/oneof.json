@@ -1,0 +1,1 @@
+{"oneOf":[{"type":"boolean"},{"const":42},{"type":"string","format":"date-time"}]}

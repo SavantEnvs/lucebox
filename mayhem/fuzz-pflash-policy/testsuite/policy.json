@@ -1,0 +1,1 @@
+{"min_prompt_tokens": 64, "max_prompt_tokens": 4096, "min_mean_margin": 0.1, "max_runs": 8, "recency_pin_tokens": 16}

@@ -1,0 +1,2 @@
+Hello world, the <|im_start|>user
+<think>x</think> क् café 123 

@@ -1,0 +1,11 @@
+project: savantenvs/lucebox
+target: fuzz-pflash-policy
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-pflash-policy/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_pflash_policy
+    libfuzzer: true
+    timeout: 5

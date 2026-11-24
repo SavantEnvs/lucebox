@@ -1,0 +1,11 @@
+project: savantenvs/lucebox
+target: fuzz-tokenizer-gguf
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-tokenizer-gguf/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_tokenizer_gguf
+    libfuzzer: true
+    timeout: 5

@@ -1,0 +1,10 @@
+Sure.<tool_call>
+<function=get_weather>
+<parameter=city>
+Paris
+</parameter>
+<parameter=days>
+2
+</parameter>
+</function>
+</tool_call>

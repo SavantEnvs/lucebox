@@ -1,0 +1,11 @@
+project: savantenvs/lucebox
+target: fuzz-gbnf
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-gbnf/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_gbnf
+    libfuzzer: true
+    timeout: 5

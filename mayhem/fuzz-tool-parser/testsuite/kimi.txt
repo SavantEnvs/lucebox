@@ -1,0 +1,1 @@
+<|tool_call_begin|>functions.run:0<|tool_call_argument_begin|>{"cmd":"x"}<|tool_call_end|>

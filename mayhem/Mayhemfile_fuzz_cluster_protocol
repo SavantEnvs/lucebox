@@ -1,0 +1,11 @@
+project: savantenvs/lucebox
+target: fuzz-cluster-protocol
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-cluster-protocol/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_cluster_protocol
+    libfuzzer: true
+    timeout: 5

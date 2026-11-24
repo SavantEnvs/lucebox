@@ -1,0 +1,1 @@
+{"$defs":{"node":{"type":"object","properties":{"v":{"type":"number"},"next":{"anyOf":[{"$ref":"#/$defs/node"},{"type":"null"}]}}}},"$ref":"#/$defs/node"}
